@@ -46,7 +46,7 @@
   color: #fff4d8;
   display: grid;
   gap: 8px;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
   margin-bottom: 12px;
   padding: 10px;
 }
@@ -393,4 +393,31 @@
   color: #4a321f;
   font-family: Arial, sans-serif;
   margin: 0;
+}
+.sheet-character-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet-header-init {
+  margin-top: 6px;
+}
+
+.sheet-header-init .sheet-label {
+  margin-bottom: 2px;
+}
+
+.sheet-header-init-row {
+  display: grid;
+  gap: 4px;
+  grid-template-columns: 60px 1fr;
+}
+
+.sheet-header-init-row input {
+  text-align: center;
+}
+
+.sheet-header-init-row button[type="roll"] {
+  min-height: 28px;
+  width: 100%;
 }

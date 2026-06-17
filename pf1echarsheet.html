@@ -1,26 +1,42 @@
 <div class="sheet-pf1">
   <div class="sheet-logo-header"><img alt="Pathfinder" src="https://imgsrv.roll20.net?src=https%3A//raw.githubusercontent.com/Roll20/roll20-character-sheets/master/Pathfinder%2520by%2520Roll20/img/logo.png"></div>
-  <div class="sheet-header">
-    <label><span class="sheet-label">Character</span><input type="text" name="attr_character_name"></label>
-    <label><span class="sheet-label">Race</span><input type="text" name="attr_race"></label>
-    <label><span class="sheet-label">Classes</span><input type="text" name="attr_classes"></label>
-    <label><span class="sheet-label">Alignment</span><input type="text" name="attr_alignment"></label>
-  </div>
+ <div class="sheet-header">
+  <label class="sheet-character-header">
+    <span class="sheet-label">Character</span>
+    <input type="text" name="attr_character_name">
+
+    <div class="sheet-header-init">
+      <span class="sheet-label">Initiative</span>
+
+      <div class="sheet-header-init-row">
+        <input type="number" name="attr_initiative">
+
+        <button type="roll"
+          value="&{template:default} {{name=Initiative}} {{roll=[[1d20+@{initiative} &{tracker}]]}}">
+          Roll
+        </button>
+      </div>
+    </div>
+  </label>
+
+  <label>
+    <span class="sheet-label">Race</span>
+    <input type="text" name="attr_race">
+  </label>
+
+  <label>
+    <span class="sheet-label">Classes</span>
+    <input type="text" name="attr_classes">
+  </label>
+
+  <label>
+    <span class="sheet-label">Alignment</span>
+    <input type="text" name="attr_alignment">
+  </label>
+</div>
 
   <div class="sheet-body">
-    <section class="sheet-panel sheet-import">
-      <div class="sheet-box">
-        <input class="sheet-import-toggle" type="checkbox" name="attr_show_import" value="1">
-        <span class="sheet-label">Statblock Payload Import</span>
-        <div class="sheet-import-content">
-          <textarea name="attr_import_payload"></textarea>
-          <button type="action" name="act_import_payload">Import</button>
-          <input type="hidden" name="attr_import_status">
-          <p><span name="attr_import_status"></span></p>
-        </div>
-      </div>
-    </section>
-
+   
     <div class="sheet-tab-container">
       <input id="sheet-tab-main" class="sheet-tab-radio sheet-tab-main-radio" type="radio" name="attr_sheet_tab" value="main" checked="checked">
       <input id="sheet-tab-gear" class="sheet-tab-radio sheet-tab-gear-radio" type="radio" name="attr_sheet_tab" value="gear">
@@ -61,7 +77,6 @@
 
     <section class="sheet-panel sheet-combat">
       <div class="sheet-grid">
-        <div class="sheet-box sheet-span-3"><span class="sheet-label">Initiative</span><input type="number" name="attr_initiative"><button type="roll" value="&{template:default} {{name=Initiative}} {{roll=[[1d20+@{initiative} &{tracker}]]}}">Roll</button></div>
         <div class="sheet-box sheet-span-3"><span class="sheet-label">BAB</span><input type="number" name="attr_bab"></div>
         <div class="sheet-box sheet-span-3"><span class="sheet-label">CMB</span><input type="number" name="attr_cmb"><button type="roll" value="&{template:default} {{name=CMB}} {{roll=[[1d20+@{cmb}]]}}">Roll</button></div>
         <div class="sheet-box sheet-span-3"><span class="sheet-label">CMD</span><input type="number" name="attr_cmd"></div>
@@ -129,6 +144,18 @@
     </section>
 
       </div>
+ <section class="sheet-panel sheet-import">
+      <div class="sheet-box">
+        <input class="sheet-import-toggle" type="checkbox" name="attr_show_import" value="1">
+        <span class="sheet-label">Statblock Payload Import</span>
+        <div class="sheet-import-content">
+          <textarea name="attr_import_payload"></textarea>
+          <button type="action" name="act_import_payload">Import</button>
+          <input type="hidden" name="attr_import_status">
+          <p><span name="attr_import_status"></span></p>
+        </div>
+      </div>
+    </section>
 
       <div class="sheet-tab-content sheet-gear-tab">
         <section class="sheet-panel">
