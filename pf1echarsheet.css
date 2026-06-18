@@ -39,7 +39,7 @@
 }
 
 .sheet-header {
-  align-items: end;
+  align-items: start;
   background: #2f2417;
   border: 1px solid #8b6b3e;
   border-bottom: 4px solid #7f1d1d;
@@ -400,24 +400,36 @@
 }
 
 .sheet-header-init {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin-top: 6px;
+  width: 55px;
 }
 
 .sheet-header-init .sheet-label {
   margin-bottom: 2px;
+  text-align: center;
+  width: 55px;
 }
 
 .sheet-header-init-row {
-  display: grid;
-  gap: 4px;
-  grid-template-columns: 60px 1fr;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 55px;
 }
 
-.sheet-header-init-row input {
+.sheet-pf1 .sheet-header-init-row input[type="number"] {
+  max-width: 55px;
+  min-width: 55px;
   text-align: center;
+  width: 55px;
 }
 
-.sheet-header-init-row button[type="roll"] {
+.sheet-pf1 .sheet-header-init-row button[type="roll"] {
+  margin: 0 auto;
   min-height: 28px;
-  width: 100%;
+  width: 70px;
 }
