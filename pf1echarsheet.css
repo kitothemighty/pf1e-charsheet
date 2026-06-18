@@ -440,9 +440,70 @@
 }
 
 .sheet-ac-shield {
-  display: block;
-  height: auto;
   margin: 10px auto 0;
-  max-width: 155px;
+  position: relative;
+  width: 155px;
+}
+
+.sheet-ac-shield img {
+  display: block;
   width: 100%;
+}
+
+.sheet-ac-value,
+.sheet-touch-value,
+.sheet-flat-value,
+.sheet-hp-value {
+  color: #241b12;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  line-height: 1;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 248, 230, 0.75);
+  z-index: 2;
+}
+
+.sheet-ac-value {
+  font-size: 28px;
+  left: 0;
+  top: 8%;
+  width: 100%;
+}
+
+.sheet-touch-value {
+  font-size: 15px;
+  left: 8%;
+  top: 24%;
+  width: 32%;
+}
+
+.sheet-flat-value {
+  font-size: 15px;
+  right: 8%;
+  top: 24%;
+  width: 36%;
+}
+
+.sheet-hp-value {
+  font-size: 36px;
+  left: 0;
+  top: 45%;
+  width: 100%;
+}
+
+.sheet-pf1 .sheet-ac-shield input.sheet-temp-value {
+  background: #fff8e8;
+  border: 1px solid #9b8054;
+  font-size: 14px;
+  height: 22px;
+  left: 50%;
+  min-height: 22px;
+  padding: 1px 3px;
+  position: absolute;
+  text-align: center;
+  top: 63%;
+  transform: translateX(-50%);
+  width: 45px;
+  z-index: 2;
 }
