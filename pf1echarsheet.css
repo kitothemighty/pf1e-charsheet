@@ -433,3 +433,16 @@
   min-height: 28px;
   width: 70px;
 }
+
+.sheet-alignment-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.sheet-ac-shield {
+  display: block;
+  height: auto;
+  margin: 10px auto 0;
+  max-width: 155px;
+  width: 100%;
+}
