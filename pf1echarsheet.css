@@ -47,8 +47,8 @@
   display: grid;
   gap: 8px;
     grid-template-columns: 2fr 1fr 1fr 1fr;
-  margin-bottom: 12px;
-  padding: 10px;
+  margin-bottom: 10px;
+  padding: 10px 10px 0px 10px;
 }
 
 .sheet-logo-header {
@@ -319,7 +319,6 @@
 }
 
 @media (max-width: 720px) {
-  .sheet-header,
   .sheet-grid,
   .sheet-repeating-row,
   .sheet-two-column-row {
@@ -403,7 +402,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 6px;
+  margin-top: 2px;
   width: 55px;
 }
 
@@ -417,7 +416,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 1px;
   width: 55px;
 }
 
@@ -430,7 +429,7 @@
 
 .sheet-pf1 .sheet-header-init-row button[type="roll"] {
   margin: 0 auto;
-  min-height: 28px;
+  min-height: 22px;
   width: 70px;
 }
 
@@ -506,4 +505,20 @@
   transform: translateX(-50%);
   width: 45px;
   z-index: 2;
+}
+.sheet-character-name-input {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.sheet-header-rolls {
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+  margin-top: 2px;
+}
+
+.sheet-header-rolls .sheet-header-init:first-child {
+  margin-right: 100px;
 }
