@@ -70,29 +70,49 @@ This project is currently under active development.
 
 The sheet is functional but not yet feature complete.
 
-## Planned Features
+## Planned Features - General
+* Allow drag of compendium items into character sheet
+* Allow drag of compendium items into chat
+* Allow import of items/spells from https://www.d20pfsrd.com/ (if possible?)
+* Allow link of all items into chat
+* Replace dice buttons with clickable links on names
+* Add functionality for critical success and critical fail rolls, add text to chat result
+* Add expand for description on all items, abils, spells, feats, traits
+* Add Companion tab for pet/familiar/mount
+* Add Journal tab: Notes multi text, session log (Campaign Name, date, expand note multi text)
 
-### Combat
+## Planned Features - Main Tab
+* Add Deity to character info
+* Add Conditions, Buffs to character info
+* Allow conditions/buffs to modify other rolls
+* List all untrained skills
+* Update skills with boxes showing total, abil mod, trained ranks, misc, temp
+* Add Spell Resistance near defense stats
+* Show Speed (land, run, swim, climb, fly)
+* Display Racial/Class abilities
 
-* Enhanced attack entries
-* Damage rolls
-* Critical confirmation rolls
-* Combat maneuver support
-* AC shield display
+## Planned Features - Gear Tab
+Add currency (cp, sp, gp, pp)
+* Add body diagram to list equipped items, armor
+* Add Consumables to list food, potions scrolls etc 
+* List standard gear; expand with description
+* List magic gear; expand with description
+* List custom gear; expand with description
 
-### Gear
-
-* Equipment tracking
-* Encumbrance calculations
-* Magic item support
-
-### Spellcasting
-
-* Spellbook management
-* Spell slot tracking
-* Prepared spells
-* Spells known
+## Planned Features - Spells Tab
 * Spell-like abilities
+* Bonus spells by {ability}
+* Spell save DC, Caster level, concentration check, spells per day
+* Melee/ranged touch attack bonus
+* Spells known/memorized (spellbook image?)
+* Metamagic spells
+* Spell slot tracking
+
+## Bugs to fix
+* Spacing where buttons overlap text/headers
+* Languages text box not contained withing bounding box
+* Import included some html code such as "&nbsp;" etc
+* Race/Class not capitalized
 
 ### Hero Lab Import Improvements
 
